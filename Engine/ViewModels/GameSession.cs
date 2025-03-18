@@ -29,7 +29,7 @@ namespace Engine.ViewModels
             CurrentLocation.XCoordinate = 0;
             CurrentLocation.YCoordinate = -1;
             CurrentLocation.Description = "this is your house";
-            CurrentLocation.ImageName = "/Engine;component/Images/Locations/Home.png";
+            CurrentLocation.ImageName = "pack://application:,,,/Engine;component/Images/Locations/Home.png";
         }
     }
 }
