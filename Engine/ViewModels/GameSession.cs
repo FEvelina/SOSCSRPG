@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Engine.Models;
+using Engine.Factories;
 
 namespace Engine.ViewModels
 {
@@ -11,9 +12,12 @@ namespace Engine.ViewModels
     {
         public Player CurrentPlayer { get; set; }
         public Location CurrentLocation { get; set; }
+        public World CurrentWorld { get; set; }
 
         public GameSession()
         {
+
+            //for now the player instantiation
             CurrentPlayer = new Player();
 
             CurrentPlayer.Name = "Scott";
@@ -23,13 +27,13 @@ namespace Engine.ViewModels
             CurrentPlayer.ExperiencePoints = 0;
             CurrentPlayer.Level = 1;
 
-            CurrentLocation = new Location();
+            //when starting a game session create a factory
+            WorldFactory factory = new WorldFactory();
+            //and the current world would be represented by all the location in the factory.CreateWorld()
+            CurrentWorld = factory.CreateWorld();
 
-            CurrentLocation.Name= "Home";
-            CurrentLocation.XCoordinate = 0;
-            CurrentLocation.YCoordinate = -1;
-            CurrentLocation.Description = "this is your house";
-            CurrentLocation.ImageName = "pack://application:,,,/Engine;component/Images/Locations/Home.png";
+            //set the default location when entering the game session
+            CurrentLocation = CurrentWorld.LocationAt(0, -1);
         }
     }
 }
