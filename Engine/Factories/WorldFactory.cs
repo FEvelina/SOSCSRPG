@@ -24,8 +24,8 @@ namespace Engine.Factories
 
 
             //X==0
-            newWorld.AddLocation(0, 2, "Herb Garden", "A garden full of medicinal plants, but somthing is moving in the grass", "pack://application:,,,/Engine;component/Images/Locations/HerbalistGarden.png");
-            newWorld.AddLocation(0, 1, "Herbalist's Hut", "Qurious hut having a nostalgic smell", "pack://application:,,,/Engine;component/Images/Locations/HerbalistHut.png");
+            newWorld.AddLocation(0, 2, "Herb Garden", "A garden full of medicinal plants, but somthing is moving in the grass", "pack://application:,,,/Engine;component/Images/Locations/HerbalistsGarden.png");
+            newWorld.AddLocation(0, 1, "Herbalist's Hut", "Qurious hut having a nostalgic smell", "pack://application:,,,/Engine;component/Images/Locations/HerbalistsHut.png");
             newWorld.AddLocation(0, 0, "Town Square", "This is the town square", "pack://application:,,,/Engine;component/Images/Locations/TownSquare.png");
             newWorld.AddLocation(0, -1, "Home", "This is your home", "pack://application:,,,/Engine;component/Images/Locations/Home.png");
 
@@ -34,7 +34,7 @@ namespace Engine.Factories
             newWorld.AddLocation(-1, -1, "Farmhouse", "There is something misterious here", "pack://application:,,,/Engine;component/Images/Locations/Farmhouse.png");
 
             //X==-2
-            newWorld.AddLocation(-2, -1, "Farmer's Field", "You can see an golden ocean, and rats..", "pack://application:,,,/Engine;component/Images/Locations/FarmField.png");
+            newWorld.AddLocation(-2, -1, "Farmer's Field", "You can see an golden ocean, and rats..", "pack://application:,,,/Engine;component/Images/Locations/FarmFields.png");
 
         
 
