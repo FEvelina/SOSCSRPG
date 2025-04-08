@@ -8,11 +8,11 @@ using Engine.Models;
 namespace Engine.Factories
 {  
     //personal thought, if there will be only the CreateWorld method, WorldFactory could be a struct, not a class
-    internal class WorldFactory
+    internal static class WorldFactory
     {
 
         //creating the world with it's locations 
-       internal World CreateWorld()
+       internal static World CreateWorld()
         {
             World newWorld = new World();
             //added the map locations, the y coordinates are ascending
