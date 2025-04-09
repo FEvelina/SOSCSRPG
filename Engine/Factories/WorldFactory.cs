@@ -26,6 +26,7 @@ namespace Engine.Factories
             //X==0
             newWorld.AddLocation(0, 2, "Herb Garden", "A garden full of medicinal plants, but somthing is moving in the grass", "pack://application:,,,/Engine;component/Images/Locations/HerbalistsGarden.png");
             newWorld.AddLocation(0, 1, "Herbalist's Hut", "Qurious hut having a nostalgic smell", "pack://application:,,,/Engine;component/Images/Locations/HerbalistsHut.png");
+            newWorld.LocationAt(0,1).QuestAvailableHere.Add(QuestFactory.GetQuestByID(01));
             newWorld.AddLocation(0, 0, "Town Square", "This is the town square", "pack://application:,,,/Engine;component/Images/Locations/TownSquare.png");
             newWorld.AddLocation(0, -1, "Home", "This is your home", "pack://application:,,,/Engine;component/Images/Locations/Home.png");
 

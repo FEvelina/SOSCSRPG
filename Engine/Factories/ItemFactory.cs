@@ -20,6 +20,10 @@ namespace Engine.Factories
             _standardGameItems.Add(new Weapon(1002, "Rusty Sword", 5, 1, 3));
             _standardGameItems.Add(new GameItem(9001, "Snake fang", 2));
             _standardGameItems.Add(new GameItem(9002, "Snakeskin", 1));
+            _standardGameItems.Add(new GameItem(9001, "Rat tail", 1));
+            _standardGameItems.Add(new GameItem(9002, "Rat Fur", 2));
+            _standardGameItems.Add(new GameItem(9001, "Spider fang", 1));
+            _standardGameItems.Add(new GameItem(9002, "Spider silk", 3));
 
 
         }
