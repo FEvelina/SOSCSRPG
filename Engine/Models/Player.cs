@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
@@ -62,8 +63,14 @@ namespace Engine.Models
             }
         }
 
-        
+        //provides notification when items get aad, remove or the list is refreshed
+        public ObservableCollection<GameItem> Inventory { get; set; }
 
+        public Player()
+        {
+            Inventory = new ObservableCollection<GameItem>();
+
+        }
 
     }
 }
