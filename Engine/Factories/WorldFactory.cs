@@ -18,6 +18,8 @@ namespace Engine.Factories
             //added the map locations, the y coordinates are ascending
             //X==2
             newWorld.AddLocation(2, 0, "Spider Forest", "A white forest, made by the giant tarantula that's watching you", "pack://application:,,,/Engine;component/Images/Locations/SpiderForest.png");
+            newWorld.LocationAt(2, 0).AddMonster(3, 100);
+
 
             //X==1
             newWorld.AddLocation(1, 0, "Town Gate", "An old gate, with missing nails", "pack://application:,,,/Engine;component/Images/Locations/TownGate.png");
@@ -25,6 +27,8 @@ namespace Engine.Factories
 
             //X==0
             newWorld.AddLocation(0, 2, "Herb Garden", "A garden full of medicinal plants, but somthing is moving in the grass", "pack://application:,,,/Engine;component/Images/Locations/HerbalistsGarden.png");
+            newWorld.LocationAt(0, 2).AddMonster(1, 100);
+
             newWorld.AddLocation(0, 1, "Herbalist's Hut", "Qurious hut having a nostalgic smell", "pack://application:,,,/Engine;component/Images/Locations/HerbalistsHut.png");
             newWorld.LocationAt(0,1).QuestAvailableHere.Add(QuestFactory.GetQuestByID(01));
             newWorld.AddLocation(0, 0, "Town Square", "This is the town square", "pack://application:,,,/Engine;component/Images/Locations/TownSquare.png");
@@ -36,6 +40,8 @@ namespace Engine.Factories
 
             //X==-2
             newWorld.AddLocation(-2, -1, "Farmer's Field", "You can see an golden ocean, and rats..", "pack://application:,,,/Engine;component/Images/Locations/FarmFields.png");
+
+            newWorld.LocationAt(-2, -1).AddMonster(2, 100);
 
         
 
